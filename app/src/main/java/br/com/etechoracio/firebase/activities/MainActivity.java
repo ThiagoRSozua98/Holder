@@ -1,5 +1,6 @@
 package br.com.etechoracio.firebase.activities;
 
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import br.com.etechoracio.firebase.ListagemActivity;
 import br.com.etechoracio.firebase.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.action_list) {
+            startActivity(new Intent(this, ListagemActivity.class));
             return true;
         }
 
